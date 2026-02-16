@@ -1,0 +1,266 @@
+:root {
+  font-family: Inter, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  color: #0f172a;
+  background: #f8fafc;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+.app-shell {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 16px;
+  min-height: 100vh;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+}
+
+h1 {
+  margin: 0;
+}
+
+.badge {
+  font-size: 12px;
+  color: #b91c1c;
+}
+
+.connected {
+  color: #15803d;
+}
+
+.header-actions {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+}
+
+.moderator-pill {
+  background: #1e293b;
+  color: #fff;
+  font-size: 12px;
+  border-radius: 999px;
+  padding: 4px 10px;
+}
+
+.link-btn {
+  border: 0;
+  background: transparent;
+  color: #1d4ed8;
+  cursor: pointer;
+}
+
+.tabs {
+  display: flex;
+  gap: 8px;
+  margin: 12px 0;
+}
+
+.tabs button {
+  border: 1px solid #cbd5e1;
+  background: #fff;
+  border-radius: 8px;
+  padding: 8px 14px;
+  cursor: pointer;
+}
+
+.tabs .active {
+  background: #2563eb;
+  border-color: #2563eb;
+  color: #fff;
+}
+
+.chat-panel,
+.polls-panel {
+  background: #fff;
+  border: 1px solid #e2e8f0;
+  border-radius: 12px;
+  padding: 12px;
+}
+
+.message-list {
+  height: 56vh;
+  overflow: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding-right: 6px;
+}
+
+.message-card {
+  border: 1px solid #e2e8f0;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+.message-card p {
+  margin: 0;
+}
+
+.message-card small {
+  color: #64748b;
+}
+
+.copy-btn {
+  margin-top: 6px;
+}
+
+.composer {
+  margin-top: 12px;
+  display: flex;
+  gap: 8px;
+}
+
+input,
+button {
+  font: inherit;
+}
+
+.composer input,
+.poll-form input {
+  flex: 1;
+  border: 1px solid #cbd5e1;
+  border-radius: 8px;
+  padding: 10px;
+}
+
+button {
+  border-radius: 8px;
+  border: 1px solid #cbd5e1;
+  padding: 10px 14px;
+  background: #fff;
+  cursor: pointer;
+}
+
+button:disabled {
+  cursor: not-allowed;
+  opacity: 0.5;
+}
+
+.join-overlay {
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+  background: #f1f5f9;
+  padding: 16px;
+}
+
+.join-modal {
+  background: #fff;
+  border: 1px solid #e2e8f0;
+  border-radius: 12px;
+  width: min(400px, 100%);
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.poll-form {
+  border: 1px solid #e2e8f0;
+  border-radius: 10px;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-bottom: 12px;
+}
+
+.poll-form h3 {
+  margin: 0;
+}
+
+.poll-form-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.poll-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.poll-card {
+  border: 1px solid #e2e8f0;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+.poll-head {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  align-items: center;
+}
+
+.poll-head h4 {
+  margin: 0;
+}
+
+.status {
+  font-size: 12px;
+  color: #475569;
+}
+
+.status.active {
+  color: #15803d;
+}
+
+.meta {
+  color: #64748b;
+  font-size: 12px;
+}
+
+.option-row {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  margin: 8px 0;
+}
+
+.option-row button {
+  text-align: left;
+}
+
+.option-row .voted {
+  border-color: #2563eb;
+  background: #eff6ff;
+}
+
+.result-line {
+  font-size: 12px;
+  color: #475569;
+}
+
+.progress {
+  height: 8px;
+  background: #e2e8f0;
+  border-radius: 999px;
+  overflow: hidden;
+}
+
+.progress div {
+  height: 100%;
+  background: #2563eb;
+}
+
+.close-btn {
+  margin-top: 8px;
+}
+
+.error {
+  color: #b91c1c;
+  margin: 8px 0;
+}
